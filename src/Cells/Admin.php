@@ -5,10 +5,10 @@
  */
 namespace BasicApp\AdminTheme\Cells;
 
-//use BasicApp\Site\Interfaces\SiteThemeCell;
-//use BasicApp\Theme\Cells\BaseTheme;
+use BasicApp\Bootstrap5\Cells\Bootstrap5;
+use BasicApp\AdminTheme\Interfaces\AdminThemeInterface;
 
-class Admin /*extends BaseTheme implements SiteThemeCell*/
+class Admin extends Bootstrap5 implements AdminThemeInterface
 {
 	public function authLayout(array $params = []) : string
 	{
