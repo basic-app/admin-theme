@@ -10,6 +10,11 @@ use BasicApp\AdminTheme\Interfaces\AdminThemeInterface;
 
 class Admin extends Bootstrap5 implements AdminThemeInterface
 {
+    public function layout(array $params = []) : string
+    {
+        return view_cell('AdminLayout', $params);
+    }
+
 	public function authLayout(array $params = []) : string
 	{
         return view_cell('AdminAuthLayout', $params);
